@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Blue Lock Wiki</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s; /* Adiciona uma transição suave para as mudanças de cor */
+        }
+
+        body.light-mode {
+            background-color: white;
+            color: black;
+        }
+
+        body.dark-mode {
+            background-color: black;
+            color: white;
+        }
+
+        header {
+            background-color: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: #000000;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        #content {
+            padding: 20px;
+        }
+
+        #community-box {
+            background-color: #000000;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 20px auto;
+            text-align: center;
+            display: block;
+            max-width: 300px;
+        }
+
+        #community-box h2 {
+            color: #ffffff;
+
+        }
+
+        #postForm {
+            margin-top: 20px;
+
+        }
+
+        #postText,
+        #postImageUrl {
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 8px;
+        }
+
+        button {
+            background-color: #000000;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #000000;
+        }
+        footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #000000;
+        color: white; /* Define a cor do texto para branco */}
+    </style>
+</head>
+<body class="dark-mode">
+    <header>
+        <img src="logoaaaa.png" alt="Blue Lock Logo" id="logo">
+        <h1>Blue Lock Wiki</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="characters.html">Personagens</a></li>
+            <li><a href="creator.html">Criadores</a></li>
+            <li><a href="why-read.html">Por que ler?</a></li>
+            <li><a href="credits.html">Créditos</a></li>
+
+        </ul>
+    </nav>
+    
+    <div id="community-box">
+        <h2>COMUNIDADE</h2>
+    </div>
+
+    <section id="content">
+        <!-- Conteúdo da Página Inicial -->
+        <form id="postForm">
+            <textarea id="postText" placeholder="Digite seu texto aqui"></textarea>
+            <input id="postImageUrl" type="text" placeholder="URL da imagem (opcional)">
+            <button type="submit">Adicionar Postagem</button>
+        </form>
+    </section>
+
+    <button id="toggle-mode-button">Alternar Modo</button>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('toggle-mode-button').addEventListener('click', function () {
+            var body = document.body;
+
+            // Alternar entre as classes light-mode e dark-mode no elemento body
+            body.classList.toggle('light-mode');
+            body.classList.toggle('dark-mode');
+        });
+    </script>
+    <footer>
+        <p>&copy; ALLAN BUENO DA SILVA</p>
+    </footer>
+    
+</body>
+</html>

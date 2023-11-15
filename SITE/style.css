@@ -1,0 +1,127 @@
+body {
+    background-color: #000; /* Cor de fundo preto */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    background-color: #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    color: blue; /* Altere para a cor desejada para os links */
+    text-decoration: none; /* Remove sublinhado padrão dos links */
+}
+
+#content {
+    padding: 20px;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+    margin-right: 10px;
+}
+
+#community-box {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px auto;
+    text-align: center;
+    display: block;
+    max-width: 300px;
+}
+
+#community-box h2 {
+    color: #fff;
+}
+#postForm {
+    background-color: #f2f2f2; /* Cor de fundo do formulário */
+    padding: 50px;
+    border-radius: 10px; /* Borda arredondada */
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+#postText {
+    width: 100%; /* Ocupa a largura total do contêiner */
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+#postImageUrl {
+    width: 100%; /* Ocupa a largura total do contêiner */
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+button {
+    background-color: #000000; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.post {
+    background-color: #fff; /* Cor de fundo do comentário */
+    border: 1px solid #ddd; /* Borda fina */
+    border-radius: 5px; /* Borda arredondada */
+    padding: 10px;
+    margin-bottom: 10px; /* Espaçamento inferior entre comentários */
+}
+
+.post p {
+    margin: 0; /* Remove a margem padrão do parágrafo dentro do comentário */
+}
+
+.post img {
+    max-width: 100%; /* Ajusta a largura máxima da imagem para não ultrapassar o contêiner */
+}
+/* No arquivo style.css */
+#content {
+    position: relative;
+    padding: 20px; /* Adiciona algum espaço interno à seção de conteúdo */
+}
+
+.overlay {
+    position: static;
+    top: 10;
+    left: 10;
+    right: 10;
+    bottom: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box; /* Inclui padding na largura/altura total */
+}
+.quadrado {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px; /* Valor em pixels para as bordas arredondadas */
+}
+#content {
+    padding: 20px;
+    color: black; /* Adiciona a cor preta ao texto dentro da área de conteúdo */
+}
